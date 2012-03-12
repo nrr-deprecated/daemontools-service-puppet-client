@@ -1,0 +1,7 @@
+#! /bin/sh
+
+exec 2>&1 sh -c '
+	cd ./root
+	./pull-changes-from-git
+	exec puppet apply --modulepath=./modules/. --verbose ./manifests/site.pp
+'
