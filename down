@@ -1,0 +1,1 @@
+Stand this up by saying `svc -o /service/puppet_client` or similar, possibly through cron.
